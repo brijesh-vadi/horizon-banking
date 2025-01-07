@@ -1,8 +1,8 @@
 'use server';
 
+import { cookies } from 'next/headers';
 import { ID } from 'node-appwrite';
 import { createAdminClient, createSessionClient } from '../server/appwrite';
-import { cookies } from 'next/headers';
 import { parseStringify } from '../utils';
 
 export const singIn = async ({ email, password }: signInProps) => {

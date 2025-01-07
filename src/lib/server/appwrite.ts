@@ -1,6 +1,6 @@
 'use server';
-import { Client, Account, Databases, Users } from 'node-appwrite';
 import { cookies } from 'next/headers';
+import { Account, Client, Databases, Users } from 'node-appwrite';
 
 export async function createSessionClient() {
   const client = new Client()
@@ -10,6 +10,7 @@ export async function createSessionClient() {
   const session = (await cookies()).get('appwrite-session');
   if (!session || !session.value) {
     throw new Error('No session');
+    // redirect('/sign-in');
   }
 
   client.setSession(session.value);

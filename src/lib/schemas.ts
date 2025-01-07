@@ -9,7 +9,7 @@ export const signUpFormSchema = z.object({
   email: z.string().email({ message: 'Please enter a valid email address.' }),
   password: z
     .string({ message: 'Password is required.' })
-    .min(8, { message: 'Password must be at least 8 characters long.' }),
+    .min(7, { message: 'Password must be at least 8 characters long.' }),
   firstName: z
     .string({ message: 'First name is required.' })
     .min(3, { message: 'First name must be at least 3 characters long.' }),

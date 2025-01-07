@@ -6,7 +6,7 @@ import SignInForm from './SignInForm';
 import SignUpForm from './SignUpForm';
 
 const AuthForm = ({ type }: { type: string }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState();
 
   return (
     <>

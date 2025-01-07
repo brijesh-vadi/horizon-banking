@@ -48,7 +48,7 @@ const SignUpForm = ({ setUser }: SignUpFormProps) => {
   return (
     <>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
+        <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-5'>
           <div className='flex items-center justify-between'>
             <CustomInput<SignUpFormValues>
               control={form.control}
